@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(186, 247, 255);
+}
+
+
+#display .display-con {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#display .display-con #box {
+    list-style: none;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#display .display-con #box .load {
+    position: fixed;
+    left: 45%;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+
+#display .display-con #box li {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(202, 227, 225, 0.322);
+    width: 17rem;
+    height: 23rem;
+    border-radius: 5rem;
+    margin: 5.5rem;
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+}
+
+#display .display-con #box li:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+#display .display-con #box li .img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: rgba(28, 28, 160, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(47, 47, 202, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#display .display-con #box li .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+#display .display-con #box li h2 {
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+}
+
+#display .display-con #box li i {
+    font-size: 3rem;
+    color: rgb(227, 225, 225);
+    margin-top: 1rem;
+}
+
+

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+#display {
+    .display-con {
+        @include container;
+        #box {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            .load {
+                position: fixed;
+                left: 45%;
+                margin: auto;
+                color: white;
+                font-size: 2rem;
+                width: 7ch;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: text 5s ease-in-out forwards infinite;
+            }
+           
+            li {
+                @include tran;
+                background-color: rgba(255, 255, 255, 0.322);
+                width: 20rem;
+                height: 30rem;
+                border-radius: 2rem;
+                margin: 1.5rem;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+                .img {
+                    width: 15rem;
+                    height: 15rem;
+                    margin-top: 2rem;
+                    border-radius: 2rem;
+                    box-shadow: rgba(76, 76, 155, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 2rem;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+              
+               
+            }
+        }
+    }
+}
